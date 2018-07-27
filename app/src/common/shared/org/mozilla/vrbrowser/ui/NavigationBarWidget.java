@@ -477,6 +477,11 @@ public class NavigationBarWidget extends UIWidget implements GeckoSession.Naviga
     }
 
     @Override
+    public void onProgressChange(GeckoSession session, int progress) {
+
+    }
+
+    @Override
     public void onSecurityChange(GeckoSession geckoSession, SecurityInformation securityInformation) {
         if (mURLBar != null) {
             boolean isSecure = securityInformation.isSecure;
