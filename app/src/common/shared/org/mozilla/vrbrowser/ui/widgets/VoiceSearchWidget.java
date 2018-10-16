@@ -210,7 +210,7 @@ public class VoiceSearchWidget extends UIWidget implements WidgetManagerDelegate
             ActivityCompat.requestPermissions((Activity)getContext(), new String[]{Manifest.permission.RECORD_AUDIO},
                     VOICESEARCH_AUDIO_REQUEST_CODE);
         } else {
-            mMozillaSpeechService.setLanguage("en-us");
+            mMozillaSpeechService.setLanguage("cmn-Hans-CN");
             mMozillaSpeechService.start(getApplicationContext());
             mIsSpeechRecognitionRunning = true;
         }
